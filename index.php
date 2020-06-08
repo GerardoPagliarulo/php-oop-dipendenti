@@ -54,7 +54,7 @@ include_once __DIR__ . '/personale/magazzinieri.php';
                 <li>Stipendio mensile: 
                     <?php
                     try {
-                        echo "{$dirigente->calcSalary(200)} €"; 
+                        echo "{$magazziniere->calcSalary(200)} €"; 
                     }
                     catch (Exception $e) {
                         $host = $_SERVER['HTTP_HOST'];
