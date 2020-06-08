@@ -7,6 +7,7 @@ include_once __DIR__ . '/personale/magazzinieri.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
     <title>php-oop-dipendenti</title>
 </head>
 <body>
@@ -21,8 +22,8 @@ include_once __DIR__ . '/personale/magazzinieri.php';
                 <li><h4><?php echo $dirigente->nome . ' ' . $dirigente->cognome; ?></h4></li>
                 <li>Data di nascita: <?php echo $dirigente->data_nascita; ?></li>
                 <li>Luogo di nascita: <?php echo $dirigente->luogo_nascita; ?></li>
-                <li>Paga oraria: <?php echo "$dirigente->paga_oraria €"; ?></li>
                 <li>Età: <?php echo $dirigente->age(); ?></li>
+                <li>Paga oraria: <?php echo "$dirigente->paga_oraria €"; ?></li>
                 <li>Stipendio mensile: 
                     <?php 
                     try {
@@ -48,8 +49,8 @@ include_once __DIR__ . '/personale/magazzinieri.php';
                 <li><h4><?php echo $magazziniere->nome . ' ' . $magazziniere->cognome; ?></h4></li>
                 <li>Data di nascita: <?php echo $magazziniere->data_nascita; ?></li>
                 <li>Luogo di nascita: <?php echo $magazziniere->luogo_nascita; ?></li>
-                <li>Paga oraria: <?php echo "$magazziniere->paga_oraria €"; ?></li>
                 <li>Età: <?php echo $magazziniere->age(); ?></li>
+                <li>Paga oraria: <?php echo "$magazziniere->paga_oraria €"; ?></li>
                 <li>Stipendio mensile: 
                     <?php
                     try {
