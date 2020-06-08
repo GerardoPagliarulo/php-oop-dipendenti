@@ -8,11 +8,11 @@
 <body>
     <header>
         <h1>Errore</h1>
-        <main>
-            <p>
-                <?php echo $_GET['message']; ?>
-            </p>
-        </main>
     </header>
+    <main>
+        <p>
+            <?php echo $_GET['message']; ?>
+        </p>
+    </main>
 </body>
 </html>
