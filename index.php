@@ -18,7 +18,7 @@ include_once __DIR__ . '/personale/magazzinieri.php';
             <h2>Dirigenti</h2>
             <ul>
                 <?php foreach ($listaDirigenti as $dirigente) { ?>
-                <h4><?php echo $dirigente->nome . ' ' . $dirigente->cognome; ?></h4>
+                <li><h4><?php echo $dirigente->nome . ' ' . $dirigente->cognome; ?></h4></li>
                 <li>Data di nascita: <?php echo $dirigente->data_nascita; ?></li>
                 <li>Luogo di nascita: <?php echo $dirigente->luogo_nascita; ?></li>
                 <li>Paga oraria: <?php echo "$dirigente->paga_oraria €"; ?></li>
@@ -45,7 +45,7 @@ include_once __DIR__ . '/personale/magazzinieri.php';
             <h2>Magazzinieri</h2>
             <ul>
                 <?php foreach ($listaMagazzinieri as $magazziniere) { ?>
-                <h4><?php echo $magazziniere->nome . ' ' . $magazziniere->cognome; ?></h4>
+                <li><h4><?php echo $magazziniere->nome . ' ' . $magazziniere->cognome; ?></h4></li>
                 <li>Data di nascita: <?php echo $magazziniere->data_nascita; ?></li>
                 <li>Luogo di nascita: <?php echo $magazziniere->luogo_nascita; ?></li>
                 <li>Paga oraria: <?php echo "$magazziniere->paga_oraria €"; ?></li>

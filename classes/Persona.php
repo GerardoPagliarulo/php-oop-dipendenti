@@ -40,15 +40,18 @@ class Persona {
 //$persona = new Persona('mirco', 'cici', '2000-7-8', 'Arezzo', 20);
 //var_dump($persona);
 //echo $persona->age();
-// Gestione dell'eccezione di prova
+// Gestione dell'eccezione.
 /*try {
     echo $persona->calcSalary(20);
 }
 catch (Exception $e) {
+    // Soluzione 1
     //echo $e->getMessage();
+    // Soluzione 2
     //header("Location: http://localhost/php-oop-dipendenti/error.php");
+    // Soluzione 3
     //header("Location: http://localhost/php-oop-dipendenti/error.php?message={$e->getMessage()}");
-    // Url dinamico
+    // Soluzione 4: Url dinamico
     $host = $_SERVER['HTTP_HOST'];
     $uri = dirname(dirname($_SERVER['PHP_SELF']));
     var_dump($uri);
