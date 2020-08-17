@@ -19,7 +19,8 @@ class Persona {
     // Methods
     // Calcolo stipendo
     public function calcSalary($oreLavoroMensile) {
-        if (! is_int($oreLavoroMensile)) {
+        //if (! is_int($oreLavoroMensile))
+        if (! is_numeric($oreLavoroMensile)) {
             throw new Exception ('Operazione non riuscita');
         }
         return $this->paga_oraria * $oreLavoroMensile;
